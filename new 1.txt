@@ -1,0 +1,226 @@
+git
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular
+$ git init
+Initialized empty Git repository in C:/wamp/www/angular/.git/
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        angular.min.js
+        app.js
+        application.css
+        bootstrap.min.css
+        images/
+        index.html
+        index.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git add .
+warning: LF will be replaced by CRLF in angular.min.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bootstrap.min.css.
+The file will have its original line endings in your working directory.
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git commit -m "initial commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <Stagiaire@h-PC.(none)>) not allowed
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   angular.min.js
+        new file:   app.js
+        new file:   application.css
+        new file:   bootstrap.min.css
+        new file:   images/Thumbs.db
+        new file:   images/gem-01.gif
+        new file:   images/gem-02.gif
+        new file:   images/gem-03.gif
+        new file:   images/gem-04.gif
+        new file:   images/gem-05.gif
+        new file:   images/gem-06.gif
+        new file:   images/gem-07.gif
+        new file:   images/gem-09.gif
+        new file:   images/gem-10.gif
+        new file:   index.html
+        new file:   index.txt
+
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$  git config --global user.email "you@example.com"
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$  git config --global user.email "mtachir@gmail.com"
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git config --global user.name "meijo"
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git commit -m "initial commit"
+[master (root-commit) 1530600] initial commit
+warning: LF will be replaced by CRLF in angular.min.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bootstrap.min.css.
+The file will have its original line endings in your working directory.
+ 16 files changed, 649 insertions(+)
+ create mode 100644 angular.min.js
+ create mode 100644 app.js
+ create mode 100644 application.css
+ create mode 100644 bootstrap.min.css
+ create mode 100644 images/Thumbs.db
+ create mode 100644 images/gem-01.gif
+ create mode 100644 images/gem-02.gif
+ create mode 100644 images/gem-03.gif
+ create mode 100644 images/gem-04.gif
+ create mode 100644 images/gem-05.gif
+ create mode 100644 images/gem-06.gif
+ create mode 100644 images/gem-07.gif
+ create mode 100644 images/gem-09.gif
+ create mode 100644 images/gem-10.gif
+ create mode 100644 index.html
+ create mode 100644 index.txt
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git remote add origin https://github.com/meijo/angular.git
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git remote add origin https://github.com/meijo/angular.git
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git branch --all
+* master
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/meijo/angular.git/': error setting certificate verify locations:
+  CAfile: C:/Users/h/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+  CApath: none
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Stagiaire/.ssh/id_rsa):
+Created directory '/c/Users/Stagiaire/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Stagiaire/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Stagiaire/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:kapPLO0DhSuWyRbaEgSzrI0x3JfBZZTnBSRK3MqCBZE Stagiaire@h-PC
+The key's randomart image is:
++---[RSA 2048]----+
+|+o+ oo+=oo.      |
+|oE...o=o.o .     |
+|=oo..=. = .      |
+|o*..oo.. o       |
+|o=.+.o. S        |
+|o O o+           |
+| + .o.+          |
+|     =.          |
+|      o.         |
++----[SHA256]-----+
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git remote remove origin
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git remote add origin git@github.com:meijo/angular.git
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git push -u origin master
+The authenticity of host 'github.com (192.30.252.130)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.130' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/Stagiaire/.ssh/id_rsa':
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 144.65 KiB | 0 bytes/s, done.
+Total 19 (delta 0), reused 0 (delta 0)
+To git@github.com:meijo/angular.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$ git push -u origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Warning: Permanently added the RSA host key for IP address '192.30.252.128' to the list of known hosts.
+Enter passphrase for key '/c/Users/Stagiaire/.ssh/id_rsa':
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+Stagiaire@h-PC MINGW64 /c/wamp/www/angular (master)
+$
+
+
+
+
+0176215026
+
+
+/****compass
+bootstrap jquery
+comprendre api /hpttp/workflow git master emerger les branches
+blog porte folio les liens vers les site develope
+
