@@ -73,7 +73,15 @@ product.reviews.push(this.review);
   };
 });
   
-  
+  app.directive("productSpecs", function() {
+  return {
+    restrict: 'A',
+    templateUrl: "product-specs.html"
+  };
+});
+
+
+
 })();
 
 
