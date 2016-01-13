@@ -66,7 +66,12 @@ product.reviews.push(this.review);
     };
   });
   
-  
+  app.directive("productDescription", function() {
+  return {
+    restrict: 'E',
+    templateUrl: "product-description.html"
+  };
+});
   
   
 })();
