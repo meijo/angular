@@ -40,7 +40,7 @@
             <a href ng-click="tab.setTab(3)">Reviews</a></li>
         </ul>
        
-        <div ng-show ="tab.isSet(1)">
+        <div ng-show ="tab.isSet(1)" ng-include="'product-description.html'">
           <h4>Description</h4>
           <blockquote>{{product.description}}</blockquote>
         </div >
@@ -66,7 +66,7 @@
               <blockquote >
                 <strong>{{reviewCtrl.review.stars}} Stars</strong>
                 {{reviewCtrl.review.body}}
-                <cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
+                <cite class="clearfix">—{{review.author}} on {{review.createdOn | date}}</cite>
               </blockquote>
 
               <!--  Review Form -->
