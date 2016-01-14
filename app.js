@@ -1,7 +1,7 @@
 (function() {
   var app = angular.module('gemStore', []);
 
-  
+   var app = angular.module('gemStore', ['store-directives']);
 
   app.controller('StoreController', function() {
     this.products = gems;
